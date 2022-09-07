@@ -142,27 +142,27 @@ export const asyncRoutes = [
       },
     ]
   },
-  // 测试管理
-  {
-    path: "/test",
-    component: Layout,
-    name: "Test",
-    meta: { title: "测试管理", icon: "el-icon-goods" },
-    children: [
-      {
-        path: "test1",
-        name: "Test1",
-        component: () => import("@/views/Test/Test1"),
-        meta: { title: "测试管理" },
-      },
-      {
-        path: "test2",
-        name: "Test2",
-        component: () => import("@/views/Test/Test2"),
-        meta: { title: "测试管理2" },
-      },
-    ],
-  },
+  // // 测试管理
+  // {
+  //   path: "/test",
+  //   component: Layout,
+  //   name: "Test",
+  //   meta: { title: "测试管理", icon: "el-icon-goods" },
+  //   children: [
+  //     {
+  //       path: "test1",
+  //       name: "Test1",
+  //       component: () => import("@/views/Test/Test1"),
+  //       meta: { title: "测试管理" },
+  //     },
+  //     {
+  //       path: "test2",
+  //       name: "Test2",
+  //       component: () => import("@/views/Test/Test2"),
+  //       meta: { title: "测试管理2" },
+  //     },
+  //   ],
+  // },
 ];
 // 任意路由:当路径错误时重定向404
 export const anyRoutes = { path: "*", redirect: "/404", hidden: true }
